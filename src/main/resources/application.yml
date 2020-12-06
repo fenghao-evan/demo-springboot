@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 200
+    accept-count: 100
+    connection-timeout: PT5S
+  servlet:
+    session:
+      cookie:
+        secure: true
+        http-only: true
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
