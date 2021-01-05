@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
-@RequestMapping("/api/demo")
+@RequestMapping("/demo")
 public class DemoController {
 
     @GetMapping("/getDemo")

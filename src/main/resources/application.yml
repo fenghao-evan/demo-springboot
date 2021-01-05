@@ -10,6 +10,7 @@ server:
       cookie:
         secure: true
         http-only: true
+    context-path: /api
 spring:
   main:
     allow-bean-definition-overriding: true
