@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
-@RequestMapping("/demo")
+@RequestMapping("/api/demo")
 public class DemoController {
 
     @GetMapping("/getDemo")
@@ -23,7 +23,9 @@ public class DemoController {
     }
 
     @PostMapping("/postDemo")
-    public String postDemo() {
-        return "this is post";
+    public Result<String> postDemo() {
+        Result<String> result = Result.newInstance();
+        result.setObject("this is post");
+        return result;
     }
 }
